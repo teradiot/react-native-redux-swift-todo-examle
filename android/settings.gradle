@@ -1,0 +1,3 @@
+rootProject.name = 'RNSwift'
+
+include ':app'
