@@ -12,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // let jsCodeLocation = NSBundle.mainBundle().URLForResource( "main", withExtension:"jsbundle");
         let jsCodeLocation = NSURL(string: "http://localhost:8081/index.ios.bundle?platform=ios&dev=true")
         let rootView = RCTRootView(bundleURL: jsCodeLocation, moduleName: "RNSwift", initialProperties: nil, launchOptions: launchOptions)
 
